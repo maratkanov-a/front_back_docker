@@ -8,7 +8,7 @@ import Footer from './footer'
 require('./../../../css/lib/normalize.css');
 require('./../../../css/lib/skeleton.css');
 require('./../../../css/lib/selectisize.css');
-require('./../../../css/lib/sweetaler.css');
+require('./../../../css/lib/sweetalert.css');
 require('./../../../css/main.css');
 
 
