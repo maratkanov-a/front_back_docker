@@ -16,7 +16,7 @@ export default class Home extends React.Component {
     }
 
     componentDidMount() {
-        $.getJSON("http://127.0.0.1:8000/users/", (data) => {
+        $.getJSON("http://185.143.172.94:8000/users/", (data) => {
             this.setState({
                 users: data
             });
@@ -83,7 +83,7 @@ export default class Home extends React.Component {
 
         if (isReceiversValid && isAmountValid && isSenderValid) {
             $.ajax({
-                url: `http://127.0.0.1:8000/users/${this.state.sender.value}/`,
+                url: `http://185.143.172.94:8000/users/${this.state.sender.value}/`,
                 type: 'PUT',
                 contentType: 'application/json',
                 data: JSON.stringify({
