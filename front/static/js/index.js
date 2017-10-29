@@ -7,7 +7,6 @@ import App from './components/main_elements/app'
 
 // pages
 import Home from './components/pages/home'
-import Login from './components/pages/login'
 import NotFound from './components/pages/not_found'
 
 
