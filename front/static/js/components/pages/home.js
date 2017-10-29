@@ -25,7 +25,9 @@ export default class Home extends React.Component {
 
     updateState(value) {
         this.setState({
-            receivers: value.map(el => {return el.value})
+            receivers: value.map(el => {
+                return el.value
+            })
         });
     }
 
@@ -89,7 +91,13 @@ export default class Home extends React.Component {
                     users: this.state.receivers,
                     amount: this.state.amount
                 }),
-                error: function(error) {
+                success: function (data) {
+                    swal({
+                        icon: "success",
+                        text: "Successfully sent"
+                    });
+                },
+                error: function (error) {
                     swal("Error", error.responseJSON.error, "error");
                 }
             });
@@ -103,37 +111,40 @@ export default class Home extends React.Component {
                     <div className="content__home">
                         <div className="offset-by-four four columns">
                             <div className="row content__home__selector_margin">
-                                <label  htmlFor="summary">Sender</label>
+                                <label htmlFor="summary">Sender</label>
                                 { !this.state.isSenderValid ? this.state.senderError : null }
                                 <SimpleSelect
                                     placeholder="Choose sender"
-                                    options = {this.state.users.map(
+                                    options={this.state.users.map(
                                         userJson => ({label: userJson.username, value: userJson.id})
                                     )}
                                     onValueChange={value => this.fromUserUpdate(value)}
                                 />
                             </div>
                             <div className="row content__home__selector_margin">
-                                <label  htmlFor="summary">Receivers</label>
+                                <label htmlFor="summary">Receivers</label>
                                 { !this.state.isReceiversValid ? this.state.receiversError : null }
                                 <MultiSelect
-                                    placeholder = "Choose inn to send"
-                                    options = {this.state.users.map(
+                                    placeholder="Choose inn to send"
+                                    options={this.state.users.map(
                                         userJson => ({label: `${userJson.inn}`, value: userJson.inn})
                                     )}
-                                    onValuesChange = {value => this.updateState(value)}
+                                    onValuesChange={value => this.updateState(value)}
                                 />
                             </div>
                             <div className="row content__home__selector_margin">
-                                <label  htmlFor="summary">Amount to send</label>
+                                <label htmlFor="summary">Amount to send</label>
                                 { !this.state.isAmountValid ? this.state.amountError : null }
-                                <input id="summary" className="u-full-width" type="text" onChange={this.changeAmount.bind(this)}/>
+                                <input id="summary" className="u-full-width" type="text"
+                                       onChange={this.changeAmount.bind(this)}/>
                             </div>
                             <div className="row content__home__selector_margin">
-                                <button className="content__home__button_white" onClick={this.submitForm.bind(this)} type="submit">Send</button>
+                                <button className="content__home__button_white" onClick={this.submitForm.bind(this)}
+                                        type="submit">Send
+                                </button>
                             </div>
                         </div>
-                    <Footer/>
+                        <Footer/>
                     </div>
                 </div>
             </div>

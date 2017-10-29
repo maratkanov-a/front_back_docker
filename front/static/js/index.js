@@ -17,7 +17,6 @@ ReactDOM.render(
 
             <IndexRoute component={Home} />
 
-            <Route path="login" component={Login} />
             <Route path='*' component={NotFound} />
 
         </Route>
