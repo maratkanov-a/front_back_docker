@@ -7,6 +7,8 @@ import Footer from './footer'
 // main styles
 require('./../../../css/lib/normalize.css');
 require('./../../../css/lib/skeleton.css');
+require('./../../../css/lib/selectsize.css');
+require('./../../../css/lib/sweetaler.css');
 require('./../../../css/main.css');
 
 
