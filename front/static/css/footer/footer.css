@@ -1,0 +1,37 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.footer__button_white {
+    background: white;
+    animation: jump 2.3s infinite
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+    10% {
+        transform: translateY(.1rem);
+    }
+    25% {
+        transform: translateY(-.9rem);
+    }
+    30% {
+        transform: translateY(-.9rem);
+    }
+    35% {
+        transform: translateY(.4rem);
+    }
+    43% {
+        transform: translateY(-.3rem);
+    }
+    53% {
+        transform: translateY(.1rem);
+    }
+    59% {
+        transform: translateY(0);
+    }
+}

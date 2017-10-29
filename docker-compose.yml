@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+    nginx:
+      container_name: nginx
+      restart: always
+      image: nginx:1.11.6-alpine
+      volumes:
+          - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+
+    db:
+      restart: always
+      image: postgres:9.5.4
+
+    backend:
+      container_name: back
+      build:
+        context: .
+        dockerfile: ./back/Dockerfile
+      links:
+          - db
+      ports:
+          - "8000:8000"
+
+    frontend:
+      container_name: front
+      build:
+        context: .
+        dockerfile: ./front/Dockerfile
+      ports:
+          - "3001:3000"
+      links:
+          - backend

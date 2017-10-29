@@ -1,0 +1,9 @@
+.content__login_border {
+    border: 1px solid wheat;
+    border-radius: 10%;
+    padding: 20px 10px 10px 10px;
+}
+
+.content__login_form {
+    margin-bottom: 0 !important;
+}

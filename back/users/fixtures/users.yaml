@@ -1,0 +1,72 @@
+- model: users.user
+  pk: 1
+  fields:
+    username: wow
+    inn: 111111111111
+    account: 25.00
+- model: users.user
+  pk: 2
+  fields:
+    username: such
+    inn: 111111111112
+    account: 6.00
+- model: users.user
+  pk: 3
+  fields:
+    username: django
+    inn: 111111111113
+    account: 4.00
+- model: users.user
+  pk: 4
+  fields:
+    username: much
+    inn: 111111111114
+    account: 23.00
+- model: users.user
+  pk: 5
+  fields:
+    username: programming
+    inn: 111111111115
+    account: 76.00
+- model: users.user
+  pk: 6
+  fields:
+    username: doge
+    inn: 111111111116
+    account: 2.00
+- model: users.user
+  pk: 7
+  fields:
+    username: batch
+    inn: 111111111117
+    account: 1.00
+- model: users.user
+  pk: 8
+  fields:
+    username: spark
+    inn: 111111111118
+    account: 47.00
+- model: users.user
+  pk: 9
+  fields:
+    username: hadoop
+    inn: 111111111119
+    account: 50.00
+- model: users.user
+  pk: 10
+  fields:
+    username: ml
+    inn: 111111111110
+    account: 12.00
+- model: users.user
+  pk: 11
+  fields:
+    username: react
+    inn: 111123411123
+    account: 10.00
+- model: users.user
+  pk: 12
+  fields:
+    username: docker
+    inn: 111123419999
+    account: 100.00
