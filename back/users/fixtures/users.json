@@ -4,7 +4,7 @@
     "pk": 1,
     "fields": {
       "username": "wow",
-      "inn": 111111111111,
+      "inn": 526108166915,
       "account": "25.00"
     }
   },
@@ -13,7 +13,7 @@
     "pk": 2,
     "fields": {
       "username": "such",
-      "inn": 111111111112,
+      "inn": 526006483351,
       "account": "6.00"
     }
   },
@@ -22,7 +22,7 @@
     "pk": 3,
     "fields": {
       "username": "django",
-      "inn": 111111111113,
+      "inn": 526017999797,
       "account": "4.00"
     }
   },
@@ -31,7 +31,7 @@
     "pk": 4,
     "fields": {
       "username": "much",
-      "inn": 111111111114,
+      "inn": 525613699841,
       "account": "93.00"
     }
   },
@@ -40,7 +40,7 @@
     "pk": 5,
     "fields": {
       "username": "programming",
-      "inn": 111111111115,
+      "inn": 526014979464,
       "account": "76.00"
     }
   },
@@ -49,7 +49,7 @@
     "pk": 6,
     "fields": {
       "username": "doge",
-      "inn": 111111111116,
+      "inn": 526004280807,
       "account": "1.00"
     }
   },
@@ -58,7 +58,7 @@
     "pk": 7,
     "fields": {
       "username": "batch",
-      "inn": 111111111117,
+      "inn": 526004723463,
       "account": "93.00"
     }
   },
@@ -67,7 +67,7 @@
     "pk": 8,
     "fields": {
       "username": "spark",
-      "inn": 111111111118,
+      "inn": 526006500060,
       "account": "47.00"
     }
   },
@@ -76,7 +76,7 @@
     "pk": 9,
     "fields": {
       "username": "hadoop",
-      "inn": 111111111119,
+      "inn": 526201860081,
       "account": "50.00"
     }
   },
@@ -85,7 +85,7 @@
     "pk": 10,
     "fields": {
       "username": "ml",
-      "inn": 111111111110,
+      "inn": 526017964561,
       "account": "12.00"
     }
   },
@@ -94,7 +94,7 @@
     "pk": 11,
     "fields": {
       "username": "react",
-      "inn": 111123411123,
+      "inn": 305525615100041,
       "account": "10.00"
     }
   },
@@ -103,7 +103,7 @@
     "pk": 12,
     "fields": {
       "username": "docker",
-      "inn": 111123419999,
+      "inn": 526017918501,
       "account": "100.00"
     }
   }
